@@ -20,13 +20,13 @@ function blurring() {
   //if we were starting invisible to opaque then it would be 0 to 1
   loadPercent.style.opacity = scale(load, 0, 100, 1, 0)
   //  now we have to do the same thing for the blur
-  //  30 is the max pixels for blur
+  //  In this project I need to use 30 as the max pixels for blur
   // template literal = `` and variable or expression syntax
   bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
 }
 
+// https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+
 function scale(number, inMin, inMax, outMin, outMax) {
   return ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin
 }
-
-// https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
