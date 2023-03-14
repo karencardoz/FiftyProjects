@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 /*universal selector*/
 * {
@@ -9,12 +9,30 @@
 }
 
 body {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Ubuntu',sans-serif;
     display: flex;
-    flex-direction: column;
     align-items:center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden; /* prevent scrollbars to be shown by default*/
+    overflow: hidden; /* prevent scroll bars to be shown by default*/
+}
+
+.bg {
+    /* no repeat center and center (on x and y axis) and cover for the background position */
+    background: url('https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60') no-repeat center center/cover;
+    position: absolute;
+    /* helps remove white space from top and left */
+    top: -30;
+    left: -30;
+    /* helps remove white space from right and bottom*/
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(80px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
 }
