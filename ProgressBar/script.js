@@ -20,7 +20,8 @@ prev.addEventListener('click', () => {
   currentActive--
   //ensure, current active doesn't go below 1
   if (currentActive < 1) {
-    currentActive = 1
+    //Arsenys tip:Trick to limiting/hardcoding values, instead of setting currentActive = 1
+    currentActive = Math.max(currentActive - 1, 1)
   }
   update()
 })
