@@ -11,7 +11,7 @@ let load = 0
 // let interval = setInterval(blurring, 30)
 //Another way to do this is using the requestAnimationFrame to improve FPS
 //https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
-let GlobalID = requestAnimationFrame(blurring)
+let globalID = requestAnimationFrame(blurring)
 
 //we want this function to run in intervals of evert 30ms
 function blurring() {
@@ -20,9 +20,11 @@ function blurring() {
   //   //stop calling the blurring()
   //   clearInterval(interval)
   // }
-  if (load === 100) {
+  if (load > 100) {
     //cancels an animation frame request previously
     done = true
+    cancelAnimationFrame(globalID)
+    return
   }
   if (!done) {
     //display load%
