@@ -51,10 +51,18 @@ body {
   right: 0;
 }
 
-.layout,
-.cards .group {
-  position: relative;
-  display: flex;
+.layout {
+  display: flex !important;
+  flex-flow: column wrap;
+  height: 100vh;
+}
+
+.cards {
+  display: flex !important;
+  height: 100vh;
+}
+.group {
+  display: flex !important;
 }
 
 .header img {
@@ -73,7 +81,8 @@ div.item {
   display: flex;
   background-color: #ffffff;
   height: 400px;
-  margin: 20px;
+  width: 400px;
+  margin: 10px;
   top: 150px;
   overflow: scroll;
   text-align: justify;
@@ -95,15 +104,28 @@ h2.text-1 {
   text-align: justify;
 }
 
-.text-2,
-.text-3,
-a {
-  padding: 20px;
+.text-2 {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
+  margin-bottom: 0;
+  padding: 10px;
   font-size: 21px;
 }
+
+.text-3 {
+  margin-top: 100px;
+  padding: 10px;
+  display: absolute;
+  flex-flow: column wrap;
+  justify-content: center;
+  font-size: 21px;
+}
+
+/* a {
+  margin: auto -150px;
+  font-family: Oswald, sans-serif !important;
+  padding: 5px;
+  font-size: 1rem;
+} */
 
 @media only screen and (max-width: 770px) {
   .container-layout h1 {
@@ -128,10 +150,15 @@ a {
     overflow: scroll;
     text-align: justify;
   }
-  .layout,
-  .cards .group {
-    position: absolute;
-    display: flex;
+  .layout {
+    display: flex !important;
+  }
+  .cards {
+    display: flex !important;
+    height: 100vh;
+  }
+  .group {
+    display: flex !important;
   }
 
   h2.text-1 {
@@ -148,13 +175,26 @@ a {
     width: 50px;
   }
 
-  .text-2,
-  .text-3,
-  a {
+  .text-2 {
     padding: 20px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
     font-size: 21px;
   }
+  .text-3 {
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    font-size: 21px;
+  }
+
+  /* a {
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    font-size: 21px;
+  } */
 }
