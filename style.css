@@ -89,7 +89,6 @@ h2.text-1 {
     line-height: 1.1;
     padding: 0;
     word-wrap: break-word;
-    --effect-scale: 1.1;
     flex-shrink: 0;
     position: relative;
     display: flex;
@@ -102,5 +101,4 @@ h2.text-1 {
     font-weight: 400;
     height: 75px;
     width: 75px;
-    
 }
