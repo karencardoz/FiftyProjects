@@ -21,9 +21,7 @@ function blurring() {
   //   clearInterval(interval)
   // }
   if (load > 100) {
-    //cancels an animation frame request previously
-    done = true
-    cancelAnimationFrame(globalID)
+    //cancels an animation
     return
   }
   if (!done) {

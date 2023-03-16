@@ -36,3 +36,25 @@ body {
     font-size: 50px;
     color: #fff;
 }
+
+nav {
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+    transform: translate(-700px, -50px);
+}
+
+nav ul {
+list-style-type: none;
+}
+
+/* makes the icon bigger and puts a space in between them */
+nav ul li i {
+    color: black;
+    font-size:30px;
+    height: 50px;
+
+}

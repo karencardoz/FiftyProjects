@@ -119,6 +119,10 @@ nav ul li + li + li {
     margin-left: 30px;
 }
 
+nav ul li a:visited{
+    color: #fff;
+}
+
 /* Content styling */
 .content img {
     max-width: 100%;
@@ -142,3 +146,4 @@ nav ul li + li + li {
     color: #333;
     line-height:1.5;
 }
+

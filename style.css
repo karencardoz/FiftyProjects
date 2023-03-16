@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/*universal selector*/
+* {
+    /*if we add a border or padding to the element,
+     it doesn't actually affect the width of the element
+    */
+    box-sizing:border-box;
+}
+
+
+body {
+    font-family: 'Ubuntu',sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* prevent scroll bars to be shown by default*/
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.bg {
+    /* no repeat center and center (on x and y axis) and cover for the background position */
+    background: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/62389c36c9db5ecc9a4e654d/mmm.jpg') no-repeat center center/cover;
+    position: absolute;
+    /* helps remove white space from top and left */
+    top: -30;
+    left: -30;
+    /* helps remove white space from right and bottom*/
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+}
+
+.header button {
+    cursor: pointer;
+    position: absolute;
+    background: transparent;
+    padding: 5px;
+    border:0;
+    font-size: 30px;
+    color: #fff;
+}
+
+.header button:focus {
+    outline: none;
+}
+
+.header button#open {
+    top:0;
+    color: grey;
+    right:0;
+}
+
+.header img {
+    margin: 10px;
+}
+
+.container-layout {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 100;
+    transform: translate(-270px,-300px);
+    width: 1000px;
+    word-wrap: break-word;
+}
+
+div.item {
+    position: relative;
+    display: flex;
+    background-color: #ffffff;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: translate(50px,-20px);
+}
+
+h2.text-1 {
+    font-family: Oswald, sans-serif !important;
+    line-height: 1.1;
+    padding: 0;
+    word-wrap: break-word;
+    --effect-scale: 1.1;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fdd460;
+    justify-content: space-evenly;
+    border-radius: 100%;
+    margin: 10px 15px;
+    font-size: 3rem;
+    font-weight: 400;
+    height: 75px;
+    width: 75px;
+    
+}
