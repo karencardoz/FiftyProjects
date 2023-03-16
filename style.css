@@ -51,6 +51,10 @@ body {
   right: 0;
 }
 
+.container-layout {
+  position: relative;
+}
+
 .layout {
   display: flex !important;
   flex-flow: column wrap;
@@ -61,6 +65,7 @@ body {
   display: flex !important;
   height: 100vh;
 }
+
 .group {
   display: flex !important;
 }
@@ -120,14 +125,7 @@ h2.text-1 {
   font-size: 21px;
 }
 
-/* a {
-  margin: auto -150px;
-  font-family: Oswald, sans-serif !important;
-  padding: 5px;
-  font-size: 1rem;
-} */
-
-@media only screen and (max-width: 770px) {
+@media (max-width: 770px) {
   .container-layout h1 {
     background-color: #ffffff;
     min-height: 100px;
@@ -144,19 +142,19 @@ h2.text-1 {
   div.item {
     display: flex;
     background-color: #ffffff;
-    height: 400px;
-    margin-left: 30px;
-    margin-right: 30px;
     overflow: scroll;
     text-align: justify;
   }
+
   .layout {
     display: flex !important;
   }
+
   .cards {
     display: flex !important;
     height: 100vh;
   }
+
   .group {
     display: flex !important;
   }
@@ -182,6 +180,7 @@ h2.text-1 {
     justify-content: space-evenly;
     font-size: 21px;
   }
+
   .text-3 {
     padding: 20px;
     display: flex;
@@ -189,12 +188,4 @@ h2.text-1 {
     justify-content: space-evenly;
     font-size: 21px;
   }
-
-  /* a {
-    padding: 20px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    font-size: 21px;
-  } */
 }
