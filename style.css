@@ -54,7 +54,7 @@ body {
 }
 
 .container-layout {
-  margin-top: -55px;
+  margin-top: -45px;
   position: relative;
   display: flex !important;
   background-color: #fdd460;
@@ -74,6 +74,7 @@ body {
   position: relative;
   z-index: -1;
   flex-flow: column wrap;
+  margin-top: -120px;
 }
 
 .group {
@@ -156,6 +157,7 @@ a {
   position: fixed;
   margin-top: 10px;
   position: relative;
+  font-size: 32px;
 }
 
 @media (max-width: 770px) {
@@ -243,7 +245,7 @@ a {
   position: fixed;
   margin-top: 10px;
   position: relative;
-  font-size: 8px;
+  font-size: 16px;
 }
 
 body {
