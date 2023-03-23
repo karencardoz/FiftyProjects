@@ -156,7 +156,7 @@ nav ul li i {
     width: var(--other-width);
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     h1 {
         font-size: 2rem;
         top: 30%
@@ -184,7 +184,7 @@ nav ul li i {
     }
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
     h1 {
         font-size: 0.8rem;
         top: 20%
